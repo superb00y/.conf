@@ -1,0 +1,113 @@
+configuration {
+    text-color: @fg;
+    font: "FiraMono Nerd Font 12";  // Compact font for file tree
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: "";
+    display-window: "";
+    drun-display-format: "{name}";
+    disable-history: false;
+    sidebar-mode: false;
+}
+
+@import "colors.rasi"
+
+window {
+    transparency: "real";
+    background-color: @bg;
+    text-color: @fg;
+    border: 0px;  // Removes the border
+    border-radius: 0px;
+    height: 99%;  // Takes up almost the entire screen height
+    width: 35%;   // Slim width for a sidebar layout
+    location: west;  // Positions the window to the west
+    x-offset: 0;
+    y-offset: 0;
+}
+
+prompt {
+    enabled: true;
+    padding: -0.4% 1% 0% -0.5%;
+    background-color: @al;
+    text-color: @fg-dim;  // Darker text for the prompt
+    font: "FiraMono Nerd Font 12";
+}
+
+entry {
+    background-color: @al;
+    text-color: @fg;
+    placeholder-color: @fg-dim;  // Matches the darker prompt text
+    expand: true;
+    horizontal-align: 0;  // Left-align text
+    placeholder: "Navigate...";
+    padding: 0.10% 0% 0% 0%;
+    blink: false;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @ac;
+    text-color: @bg;
+    expand: false;
+    border: 0px;
+    border-radius: 0px;
+    margin: 0% 0% 0% 0%;
+    padding: 1.5%;
+}
+
+listview {
+    background-color:               @al;
+    padding:                        0px;
+    columns:                        1;
+    lines:                          3;
+    spacing:                        0%;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @al;
+	border:							0% 0% 0% 0%;
+    border-radius:                  0% 0% 0% 0%;
+	border-color:					@ac;
+    children:                       [ inputbar, listview ];
+    spacing:                       	0%;
+    padding:                        0%;
+    expand: true;
+}
+
+element {
+    background-color:               @al;
+    text-color:                     @fg;
+    orientation:                    horizontal;
+    border-radius:                  0%;
+    padding:                        1% 0.5% 1% 0.5%;
+}
+
+element-icon {
+    background-color: 				@al;
+    text-color:       				@al;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    size:                           28px;
+    border:                         0px;
+    padding:                        0 10px 0 10px;
+}
+
+element-text {
+    background-color: 				@al;
+    text-color:       				inherit;
+    expand:                         true;
+    horizontal-align:               0;
+    vertical-align:                 0.5;
+    margin:                         0% 0.25% 0% 0.25%;
+}
+
+element selected {
+    background-color:               @se;
+    text-color:                     @fg;
+	border:							0% 0% 0% 0%;
+    border-radius:                  0px;
+    border-color:                  	@bg;
+}
