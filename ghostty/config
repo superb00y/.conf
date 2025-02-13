@@ -1,0 +1,57 @@
+theme = Dracula 
+font-family = FiraMono Nerd Font
+#font-family = BerkeleyMono Nerd Font
+#font-family = Iosevka Nerd Font
+#font-family = SFMono Nerd Font 
+font-size = 12
+shell-integration-features = no-cursor,sudo,no-title
+cursor-style = block
+adjust-cell-height = 15%
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+window-inherit-font-size = true
+window-padding-x = 4
+window-padding-y = 3
+window-theme = "dark"
+window-decoration = false
+window-padding-balance = true 
+window-save-state = always
+# background = 1C2021
+# foreground = d4be98
+
+# keybindings
+keybind = control+s>r=reload_config
+keybind = control+s>x=close_surface
+
+keybind = control+s>n=new_window
+
+# tabs 
+keybind = control+s>c=new_tab
+keybind = control+s>shift+l=next_tab
+keybind = control+s>shift+h=previous_tab
+keybind = control+s>comma=move_tab:-1
+keybind = control+s>period=move_tab:1
+
+# quick tab switch
+keybind = control+s>1=goto_tab:1
+keybind = control+s>2=goto_tab:2
+keybind = control+s>3=goto_tab:3
+keybind = control+s>4=goto_tab:4
+keybind = control+s>5=goto_tab:5
+keybind = control+s>6=goto_tab:6
+keybind = control+s>7=goto_tab:7
+keybind = control+s>8=goto_tab:8
+keybind = control+s>9=goto_tab:9
+
+# split
+keybind = control+s>\=new_split:right
+keybind = control+s>-=new_split:down
+keybind = control+s>j=goto_split:bottom
+keybind = control+s>k=goto_split:top
+keybind = control+s>h=goto_split:left
+keybind = control+s>l=goto_split:right
+keybind = control+s>z=toggle_split_zoom
+keybind = control+s>e=equalize_splits
+
+# other
+copy-on-select = clipboard

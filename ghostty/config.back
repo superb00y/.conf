@@ -1,0 +1,9 @@
+theme = BirdsOfParadise
+shell-integration = fish
+font-family = "FiraMono Nerd Font"
+font-size = 13
+window-inherit-font-size = true
+window-padding-x = 0,0
+window-padding-y = 0,1
+window-theme = "dark"
+window-decoration = false
