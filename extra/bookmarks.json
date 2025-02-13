@@ -1,0 +1,110 @@
+[
+  {
+    "groups": [
+      {
+        "name": "code",
+        "bookmarks": [
+          { "name": "codeacademy", "url": "https://www.codecademy.com/learn" },
+          { "name": "exercism", "url": "https://exercism.org/tracks" },
+          {
+            "name": "freecodecamp",
+            "url": "https://www.freecodecamp.org/learn"
+          },
+          { "name": "edx", "url": "https://courses.edx.org/dashboard" },
+          {
+            "name": "leetcode",
+            "url": "https://leetcode.com/problem-list/979jgztm/"
+          }
+        ]
+      },
+      {
+        "name": "gitrepos:",
+        "bookmarks": [
+          {
+            "name": "awesome dots",
+            "url": "https://github.com/superb00y/awesome"
+          },
+          { "name": "PFE", "url": "https://github.com/superb00y/PFE" },
+          { "name": "THESIS", "url": "https://github.com/superb00y/THESIS" },
+          {
+            "name": "ankifill",
+            "url": "https://github.com/superb00y/ankifill"
+          },
+          {
+            "name": "anki_css_tamplate",
+            "url": "https://github.com/superb00y/anki_css_tamplate"
+          }
+        ]
+      },
+      {
+        "name": "ai chats",
+        "bookmarks": [
+          { "name": "deepseek", "url": "https://chat.deepseek.com/" },
+          { "name": "chatgpt", "url": "https://chatgpt.com/" },
+          { "name": "v0", "url": "https://v0.dev/" }
+        ]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "daily",
+        "bookmarks": [
+          { "name": "reddit", "url": "https://www.reddit.com" },
+          { "name": "youtube", "url": "https://www.youtube.com/" },
+          { "name": "telegram", "url": "https://web.telegram.org/a/" },
+          { "name": "gmail", "url": "https://mail.google.com/mail/u/0/" },
+          { "name": "pinterest", "url": "https://www.pinterest.com/homefeed/" }
+        ]
+      },
+      {
+        "name": "study",
+        "bookmarks": [
+          { "name": "info hub", "url": "https://infohub-o79j.vercel.app/" }
+        ]
+      },
+      {
+        "name": "freelance",
+        "bookmarks": [
+          { "name": "freelancer", "url": "https://www.freelancer.com" },
+          {
+            "name": "upwork",
+            "url": "https://www.upwork.com/nx/find-work/best-matches"
+          },
+          { "name": "khamsat", "url": "https://khamsat.com/" }
+        ]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "google",
+        "bookmarks": [
+          {
+            "name": "translate",
+            "url": "https://translate.google.com/?sl=en&tl=fr&op=translate"
+          },
+          { "name": "docs", "url": "https://docs.google.com/document/u/0/" },
+          { "name": "drive", "url": "https://drive.google.com/drive/my-drive" }
+        ]
+      },
+      {
+        "name": "fun",
+        "bookmarks": [{ "name": "m4ufree", "url": "https://m4ufree.vip/" }]
+      },
+      {
+        "name": "resources",
+        "bookmarks": [
+          { "name": "miro", "url": "https://miro.com/app/dashboard/" },
+          {
+            "name": "blender colab",
+            "url": "https://colab.research.google.com/github/ynshung/blender-colab/blob/master/blender_render.ipynb#scrollTo=8dFNjYGTgNjR"
+          },
+          { "name": "markmap", "url": "https://markmap.js.org/repl" }
+        ]
+      }
+    ]
+  }
+]
