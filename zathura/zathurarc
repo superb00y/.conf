@@ -1,0 +1,84 @@
+### Settings from original zathurarc ###
+set zoom-step 5
+map <C-n> zoom out
+map <C-m> zoom in
+set incremental-search "true"
+set font "JetBrainsMono NF"
+set adjust-open "width"
+set window-title-basename "true"
+set statusbar-basename "true"
+set guioptions true
+set selection-clipboard clipboard
+map <C-Space> toggle_statusbar
+
+### zathura-pywal ###
+# Allow recolor
+set recolor 'true'
+
+# Don't allow original hue when recoloring
+set recolor-keephue 'true'
+
+# Don't keep original image colors while recoloring
+set recolor-reverse-video 'false'
+
+# Command line completion entries
+set completion-fg '#ead5d8'
+set completion-bg '#0a0a0d'
+
+# Command line completion group elements
+set completion-group-fg '#5C6798'
+set completion-group-bg '#0a0a0d'
+
+# Current command line completion element
+set completion-highlight-fg '#0a0a0d'
+set completion-highlight-bg '#ead5d8'
+
+# Default foreground/background color
+set default-bg 'rgba(10,10,13,0.8)'
+
+# Input bar
+set inputbar-fg '#f07178'
+set inputbar-bg '#0d1017'
+
+# Notification
+set notification-fg '#ead5d8'
+set notification-bg '#0a0a0d'
+
+# Error notification
+set notification-error-fg '#ead5d8'
+set notification-error-bg '#394F8B'
+
+# Warning notification
+set notification-warning-fg '#ead5d8'
+set notification-warning-bg '#394F8B'
+
+set tabbar-fg '#bfbdb6'
+set tabbar-bg '#0d1017'
+
+# Focused tab - TODO
+# set tabbar-focus-fg
+# set tabbar-focus-bg
+
+# Status bar
+set statusbar-fg '#bfbdb6'
+set statusbar-bg '#0d1017'
+
+# Highlighting parts of the document (e.g. show search results)
+set highlight-color 'rgba(100,10,133,0.4)'
+set highlight-active-color 'rgba(10,10,13,0.8)'
+
+# Represent light/dark colors in recoloring mode
+set recolor-lightcolor '#0d1017'
+set recolor-darkcolor '#bfbdb6'
+
+# 'Loading...' text
+set render-loading-fg '#ead5d8'
+set render-loading-bg '#0a0a0d'
+
+# Index mode
+set index-fg '#ead5d8'
+set index-bg '#0a0a0d'
+
+# Selected element in index mode
+set index-active-fg '#0a0a0d'
+set index-active-bg '#ead5d8'

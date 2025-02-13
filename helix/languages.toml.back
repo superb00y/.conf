@@ -1,0 +1,142 @@
+# languages.toml
+
+# C language settings
+[[language]]
+name = "c"
+scope = "source.c"
+injection-regex = "c"
+file-types = ["c"] # TODO: ["h"]
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+language-servers = [ "clangd" ]
+indent = { tab-width = 2, unit = "  " }
+
+# C++ language settings
+[[language]]
+name = "cpp"
+indent = { unit="\t", tab-width = 2, expand-tabs = true }
+language-servers = [ { name = "clangd", except-features = [ "format" ] } ]
+auto-format = true
+formatter = { command = "clang-format" }
+
+# Python language settings
+[[language]]
+name = "python"
+indent = { unit="\t", tab-width = 2, expand-tabs = true }
+language-servers = [ { name = "pylsp", except-features = [ "format" ] } ]
+auto-format = true
+formatter = { command = "black" }
+
+# Lua language settings
+[[language]]
+name = "lua"
+injection-regex = "lua"
+scope = "source.lua"
+file-types = ["lua"]
+shebangs = ["lua", "luajit"]
+roots = [".luarc.json", ".luacheckrc", ".stylua.toml", "selene.toml", ".git"]
+comment-token = "--"
+block-comment-tokens = { start = "--[[", end = "--]]" }
+indent = { tab-width = 2, unit = "  " }
+language-servers = [ "lua-language-server" ]
+auto-format = true
+formatter = { command = "stylua" }
+
+# HTML language settings
+[[language]]
+name = "html"
+scope = "text.html.basic"
+injection-regex = "html"
+file-types = ["html", "htm", "shtml", "xhtml", "xht", "jsp", "asp", "aspx", "jshtm", "volt", "rhtml", "cshtml"]
+block-comment-tokens = { start = "<!--", end = "-->" }
+language-servers = [ "vscode-html-language-server", "emmet-ls" ]
+formatter = { command = "prettier", args = ["--parser", "html"] }
+auto-format = true
+indent = { tab-width = 2, unit = "  " }
+
+# CSS language settings
+[[language]]
+name = "css"
+scope = "source.css"
+injection-regex = "css"
+file-types = ["css", "scss"]
+block-comment-tokens = { start = "/*", end = "*/" }
+language-servers = [ "vscode-css-language-server","emmet-ls" ]
+indent = { tab-width = 2, unit = "  " }
+formatter = { command = "prettier", args = ["--parser", "css"] }
+auto-format = true
+
+# JavaScript language settings
+[[language]]
+name = "javascript"
+indent = { unit="\t", tab-width = 2, expand-tabs = true }
+language-servers = [ "vscode-eslint-language-server" ]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+
+
+[[language]]
+name = "tsx"
+indent = { unit="\t", tab-width = 2, expand-tabs = true }
+language-servers = [ "vscode-eslint-language-server" ]
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
+
+# PHP language settings
+[[language]]
+name = "php"
+indent = { unit="\t", tab-width = 2, expand-tabs = true }
+language-servers = [ { name ="intelephense" , except-features = [ "format" ] } ]
+auto-format = true
+formatter = { command = "php-cs-fixer", args = ["fix", "--quiet"] }
+
+# Rust language settings
+[[language]]
+name = "rust"
+indent = { unit="\t", tab-width = 2, expand-tabs = true }
+language-servers = [ { name ="rust-analyzer" , except-features = [ "format" ] } ]
+auto-format = true
+formatter = { command = "rustfmt" }
+
+# TOML language settings
+[[language]]
+name = "toml"
+indent = { unit="\t", tab-width = 2, expand-tabs = true }
+language-servers = [ { name ="taplo-lsp" , except-features = [ "format" ] } ]
+auto-format = true
+formatter = { command = "taplo", args = ["format"] }
+
+# JSON language settings
+[[language]]
+name = "json"
+scope = "source.json"
+injection-regex = "json"
+file-types = [
+  "json",
+  "arb",
+  "ipynb",
+  "geojson",
+  "gltf",
+  "webmanifest",
+  { glob = "flake.lock" },
+  { glob = ".babelrc" },
+  { glob = ".bowerrc" },
+  { glob = ".jscrc" },
+  "js.map",
+  "ts.map",
+  "css.map",
+  { glob = ".jslintrc" },
+  "jsonl",
+  "jsonld",
+  { glob = ".vuerc" },
+  { glob = "composer.lock" },
+  { glob = ".watchmanconfig" },
+  "avsc",
+  { glob = ".prettierrc" },
+  "ldtk",
+  "ldtkl",
+]
+language-servers = [ "vscode-json-language-server" ]
+auto-format = true
+indent = { tab-width = 2, unit = "  " }
+

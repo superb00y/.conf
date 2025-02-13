@@ -1,0 +1,8 @@
+[rules]
+# Add this rule for HTML files
+[rules.html]
+pattern = "^.*\\.(html|htm)$"
+command = "live-server --port=8080 --no-browser --open=%"
+
+# If you prefer Python's server instead:
+# command = "python -m http.server 8080"

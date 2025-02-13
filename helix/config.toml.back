@@ -1,0 +1,76 @@
+# Changes the cursor and selection colors
+theme = "gruvbox_robert"
+
+[editor]
+line-number = "relative"
+completion-trigger-len = 1
+idle-timeout = 0
+true-color = true
+cursorline = true
+color-modes = true
+bufferline = "multiple"
+
+[editor.whitespace.render]
+newline = "all"
+
+[editor.lsp]
+display-messages = true
+display-signature-help-docs = false
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+render = true
+character = "┇"
+
+[editor.file-picker]
+ignore = false
+hidden = false
+
+#
+# Keybindings
+#
+# Only add a new keybinding when you *frequently* perform the actions,
+# not because you think it would be 'nice' or 'useful'.
+# Explain what each keybind does above it.
+#
+
+[keys.normal]
+# Select within the line bounds, useful for quick whole-line changes
+X = ["goto_first_nonwhitespace", "select_mode", "goto_line_end", "normal_mode"]
+
+# Change everything from the cursor to the end of the line
+A-l = ["collapse_selection", "select_mode", "goto_line_end", "change_selection"]
+
+# Delete from cursor to line end
+C-l = ["collapse_selection", "select_mode", "goto_line_end", "delete_selection"]
+
+# Reload the current document from disk
+C-r = ":reload"
+
+# Use L/R arrow keys to switch between buffers, visible in the bufferline
+left = ":buffer-previous"
+right = ":buffer-next"
+
+# 
+A-f = ":format"
+
+[keys.normal."]"]
+b = ":buffer-next"
+
+[keys.normal."["]
+b = ":buffer-previous"
+
+[keys.normal.space]
+# Closing the buffer is something I should do more often
+d = ":buffer-close"
+
+[keys.insert]
+# Most editors use ctrl-space for completion, same as C-x
+C-space = "completion"
+
+[keys.select]
+# Usually if I collapse a selection in select mode, it's because I didn't
+# intend to be in select mode in the first place
+";" = ["collapse_selection", "normal_mode"]

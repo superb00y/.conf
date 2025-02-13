@@ -1,0 +1,1 @@
+{Intel Open Source Technology Center/Mesa DRI Intel(R) HD Graphics (HSW GT1)/4.5 (Core Profile) Mesa 21.3.9-arch.6 Amber}=SUPPORTED

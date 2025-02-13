@@ -1,0 +1,5 @@
+[2025-02-09 13:41:59:0811] [No database.consolemanager.result:[object IDBDatabase]] 
+[2025-02-09 13:42:00:0128] [called] 
+[2025-02-09 13:42:01:0257] [CheckLicense] exception { cloud: true, message: 'Not Authorized', status: 403 }
+[2025-02-09 13:42:27:0487] [info] Main - close { willQuitApp: false }
+[2025-02-09 13:42:27:0491] [info] Main - willClose true

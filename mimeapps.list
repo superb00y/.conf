@@ -1,0 +1,12 @@
+[Default Applications]
+application/pdf=org.pwmt.zathura.desktop
+image/jpeg=feh.desktop
+image/png=feh.desktop
+text/html=helix.desktop
+x-scheme-handler/gitkraken=GitKraken.desktop
+
+[Added Associations]
+application/pdf=org.pwmt.zathura.desktop;
+image/jpeg=feh.desktop;
+image/png=feh.desktop;
+text/html=helix.desktop;
